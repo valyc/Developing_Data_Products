@@ -1,0 +1,46 @@
+Meteorology of Republic of Moldova, 2012-2014 years
+========================================================
+Developing Data Products - Course Project   
+  
+author: Valeriu Ciorba  
+date: Nov 22, 2015   
+
+
+Description
+========================================================
+type: sub-section
+
+This presentation is being created as part of the peer assessment for the coursera developing data products class. The assignment is geared toward ensuring the following concepts were well understood by the students
+
+- **shiny** to build data product application
+- **R-Presentation or slidify** to create data product related presentations
+
+The Application
+========================================================
+type: sub-section
+To display the understanding of using **shiny**, an application has been developed and deployed at: 
+https://valyc.shinyapps.io/DDP_valyc
+
+The application allows the user to:
+- Select the input: type of indicators and range of years. 
+- Select the output to be displayed: plots, data table or documentation  
+- Also has a option to download the filtered data.
+
+
+The Data
+========================================================
+type: sub-section
+The data used in application are Meteorology data (*air temperature, quantity of precipitations and wind speed for years 2002-2014*), provided by [National Bureau of Statistcis of Moldova](http://statbank.statistica.md/pxweb/Database/EN/01%20GEO/GEO01/GEO01.asp).
+
+Dataset has been obtained from [here](http://statbank.statistica.md/pxweb/Database/EN/01%20GEO/GEO01/GEO01.asp) and processed for the course project.
+
+Source code for the project is available on the [GitHub](https://github.com/valyc/Developing_Data_Products).
+
+
+Data
+=====================
+type: sub-section
+```{r}
+dt.raw <- read.table("data_valyc_DDP.csv", sep = ",", header = TRUE)
+head(dt.raw)
+``` 
